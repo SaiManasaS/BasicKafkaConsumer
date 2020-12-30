@@ -100,7 +100,6 @@ void pollForMsgs(rd_kafka_t * rk1, rd_kafka_t * rk2)
 		else
 		{
 			DBG(cout << "Dbg: Line 779" << endl);
-			//inputKafkaMsg2 = "{\"actionServiceComputer\":null,\"actionServiceIp\":\"0\",\"actionserviceAction\":3}__TypeId__Ncom.fim.action.dto.ActionDTOKafkaFormat";
 			DBG(cout << "inputKafkaMsg2: " << inputKafkaMsg2 << endl);
 
 			inputKafkaMsg2 = "";
@@ -139,7 +138,7 @@ int configKafkaConsumer()
 
 	char errstr[512] = "";
 	string kafkaBrokerServer = "localhost:9092";
-	string kafkaBrokerServerList = "localhost:9092,52.140.103.217:9092";
+	string kafkaBrokerServerList = "localhost:9092,52.125.130.218:9092";
 
 	vector<string> firstListtopics;
 	vector<string> secondListtopics;
